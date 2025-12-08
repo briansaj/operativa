@@ -1,11 +1,14 @@
 {
   "name": "cpm",
   "private": true,
+  "homepage": "https://briansaj.github.io/operativa",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mui/icons-material": "^5.8.4",
