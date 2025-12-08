@@ -91,6 +91,7 @@ export const PlanningTypeSelection = () => {
           </ListItemButton>
         </List>
       </Box>
+
       <Box textAlign="center">
         <Typography variant="overline">Transporte y asignación</Typography>
         <Divider />
@@ -121,6 +122,32 @@ export const PlanningTypeSelection = () => {
             <ListItemText
               sx={{ my: 0, display: "flex", justifyContent: "center" }}
               primary="ASIGNACIÓN"
+              primaryTypographyProps={{
+                fontSize: 18,
+                fontWeight: "small",
+                letterSpacing: 1,
+              }}
+            />
+          </ListItemButton>
+        </List>
+      </Box>
+
+      <Box textAlign="center">
+        <Typography variant="overline">AHP</Typography>
+        <Divider />
+      </Box>
+
+       <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
+        <List component="nav" aria-label="planning types">
+          <ListItemButton
+            selected={selected === TYPE.CPM}
+            onClick={(event) =>
+              navigate("/ahp")
+            }
+          >
+            <ListItemText
+              sx={{ my: 0, display: "flex", justifyContent: "center" }}
+              primary="AHP"
               primaryTypographyProps={{
                 fontSize: 18,
                 fontWeight: "small",

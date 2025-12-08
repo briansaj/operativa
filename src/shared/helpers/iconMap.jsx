@@ -15,6 +15,7 @@ import SaveIcon from "@mui/icons-material/Save";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
+import CheckIcon from '@mui/icons-material/Check';
 
 export default {
   add: <AddIcon />,
@@ -34,4 +35,5 @@ export default {
   reset: <RestartAltIcon />,
   table: <TableViewIcon />,
   timeline: <TimelineIcon />,
+  check: <CheckIcon />,
 };

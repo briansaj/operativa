@@ -31,7 +31,7 @@ export const GraphScreen = () => {
         </Stack>
       ) : (
         <Box textAlign="center">
-          <Typography variant="subtitle1">Falta processar las actividades</Typography>
+          <Typography variant="subtitle1">Falta procesar las actividades</Typography>
         </Box>
       )}
     </>

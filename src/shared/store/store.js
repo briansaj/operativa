@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { activitySlice } from "./slices/activity";
 import { pathSlice } from "./slices/path";
 import { planningSlice } from "./slices/planning";
+import { ahpSlice } from "./slices/ahp";
 import { loadState, saveState } from "./helpers";
 import throttle from "lodash/throttle";
 
@@ -12,6 +13,7 @@ export const store = configureStore({
     activity: activitySlice.reducer,
     path: pathSlice.reducer,
     planning: planningSlice.reducer,
+    ahp: ahpSlice.reducer,
   },
   preloadedState: persistedState,
 });
