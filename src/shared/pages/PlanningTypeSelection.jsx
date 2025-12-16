@@ -41,16 +41,10 @@ export const PlanningTypeSelection = () => {
     navigate("/activities");
   };
 
-  const FOOTER_BUTTONS = [
-    {
-      text: "seleccionar",
-      icon: "next",
-      type: "fab",
-      color: "error",
-      handle: goToActivities,
-      position: "left",
-    },
-  ];
+  const goToAhp = () => {
+    dispatch(chooseType(selected));
+    navigate("/ahp");
+  };
 
   return (
     <>
@@ -141,9 +135,9 @@ export const PlanningTypeSelection = () => {
         <List component="nav" aria-label="planning types">
           <ListItemButton
             selected={selected === TYPE.CPM}
-            onClick={(event) =>
-              navigate("/ahp")
-            }
+            onClick={(event) => {
+              goToAhp()
+            }}
           >
             <ListItemText
               sx={{ my: 0, display: "flex", justifyContent: "center" }}
